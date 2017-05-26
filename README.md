@@ -1,2 +1,3 @@
 # C-Scripts
-How to pythonDjango!
+
+A back-up my mini-scripts written for experimentation and learning.
