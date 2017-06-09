@@ -3,11 +3,10 @@ struct emp
 {
    char name[10];
    int age;
-};
+}e;
 
 int main(void)
 {
-   struct emp e;
    FILE *p,*q;
    p = fopen("one.txt", "a");
    q = fopen("one.txt", "r");
@@ -18,9 +17,10 @@ int main(void)
    do
    {
       fscanf(q,"%s %d\n", e.name, &e.age);
-      printf("%s %d", e.name, e.age);
+      printf("%s %d\n", e.name, e.age);
    }
    while( !feof(q) );
+   fclose(q);
    
    return 0;
 }
