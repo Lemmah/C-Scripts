@@ -23,6 +23,8 @@ int main(void)
       {"Leia",44,6677,"Europe"}
     };
 
+    printf("%s", emp1[1].name);
+
     FILE *fp;
     fp = fopen(csvFileName,"w");
     int i=0;
