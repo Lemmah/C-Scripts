@@ -1,5 +1,9 @@
 # depslib dependency file v1.0
-1497208638 source:/home/scholar/WorkSpaces/C/CodeBlocksProjects/ATMMachine/main.c
+1497441222 source:/home/scholar/WorkSpaces/C/CodeBlocksProjects/ATMMachine/main.c
+	<stdio.h>
+	<stdlib.h>
+
+1497291954 source:/home/scholar/WorkSpaces/C/CodeBlocksProjects/ATMMachine/functions.c
 	<stdio.h>
 	<stdlib.h>
 
