@@ -58,3 +58,7 @@ The #define is used to get constants.
 Constants are always written in uppercase, this is a convenction.
 No semi-colons at the end of any preprocessor directives.
 
+
+### Break and continue statements
+Break statement simply exits out of the loop.
+Continue statement skips or rather ignore all the code that comes after the continue statement. The continue stament does not break out of the loop.
