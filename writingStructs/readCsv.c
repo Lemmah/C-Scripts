@@ -8,7 +8,7 @@ struct emp
       int age;
       int salary;
       char address[30];
-};
+}empDetails[5];
 
 int main(void)
 {
@@ -19,6 +19,7 @@ int main(void)
     /*
     Notes: difference between fscanf and fgets is that fgets reads to upto the newline character and stores it while fscanf only reads upto a whitespace and doesn't store it
     */
+    int lineCount = 1;
     while (fgets(line, sizeof(line), file)) {
         /* note that fgets don't strip the terminating \n, checking its
            presence would allow to handle lines longer that sizeof(line) */
@@ -28,6 +29,10 @@ int main(void)
             line[lineLen - 1] = 0;
         }
         printf("%s\n", line);
+        sscanf(line, "%s, %i, %i, %s", empDetails[lineCount].name, &empDetails[lineCount].age, &empDetails[lineCount].salary, empDetails[lineCount].address);
+        lineCount += 1;
+
+        printf("%d", empDetails[lineCount].age);
     }
     /* may check feof here to make a difference between eof and io failure -- network
        timeout for instance */
