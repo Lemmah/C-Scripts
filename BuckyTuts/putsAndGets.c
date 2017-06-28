@@ -8,4 +8,5 @@ int main(void){
 
     scanf("%s", catsName);
     puts(catsName);
+    
 }
